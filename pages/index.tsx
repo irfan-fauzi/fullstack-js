@@ -1,10 +1,12 @@
-import Image from "next/image";
-import { Img404 } from "@/utils/img";
+import AOS from "aos";
 
+import { useEffect } from "react";
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
-      
       <section>
         <nav className="navbar navbar-expand-lg navbar-light bg-light bg-white pt-lg-40 pb-lg-40 pt-30 pb-50">
           <div className="container-fluid">
@@ -134,11 +136,8 @@ export default function Home() {
             <div className="col-lg-6 col-12 d-lg-block d-none">
               <div className="d-flex justify-content-lg-end justify-content-center me-lg-5">
                 <div className="position-relative" data-aos="zoom-in">
-                  <img
-                    src="/public/img/Header-1.png"
-                    className="img-fluid"
-                    alt=""
-                  />
+                  <img src="/img/Header-1.png" className="img-fluid" alt="" />
+
                   <div className="card left-card position-absolute border-0">
                     <div className="d-flex align-items-center mb-16 gap-3">
                       <img
@@ -148,6 +147,7 @@ export default function Home() {
                         className="rounded-pill"
                         alt=""
                       />
+
                       <div>
                         <p className="text-sm fw-medium color-palette-1 m-0">
                           Shayna Anne
@@ -223,7 +223,7 @@ export default function Home() {
                   <div className="card right-card position-absolute border-0">
                     <div className="position-relative d-flex flex-row justify-content-center mb-24">
                       <img
-                        src="./assets/img/Header-3.png"
+                        src="/img/Header-3.png"
                         className="rounded-pill"
                         alt=""
                       />
@@ -550,7 +550,7 @@ export default function Home() {
               <a href="./src/detail.html">
                 <div className="blur-sharp">
                   <img
-                    src="./assets/img/Thumbnail-2.png"
+                    src="/img/Thumbnail-2.png"
                     width="205"
                     height="270"
                     alt=""
@@ -586,7 +586,7 @@ export default function Home() {
               <a href="./src/detail.html">
                 <div className="blur-sharp">
                   <img
-                    src="./assets/img/Thumbnail-3.png"
+                    src="/img/Thumbnail-3.png"
                     width="205"
                     height="270"
                     alt=""
@@ -622,7 +622,7 @@ export default function Home() {
               <a href="./src/detail.html">
                 <div className="blur-sharp">
                   <img
-                    src="./assets/img/Thumbnail-4.png"
+                    src="/img/Thumbnail-4.png"
                     width="205"
                     height="270"
                     alt=""
@@ -658,7 +658,7 @@ export default function Home() {
               <a href="./src/detail.html">
                 <div className="blur-sharp">
                   <img
-                    src="./assets/img/Thumbnail-5.png"
+                    src="/img/Thumbnail-5.png"
                     width="205"
                     height="270"
                     alt=""
@@ -749,7 +749,7 @@ export default function Home() {
               data-aos="zoom-in"
             >
               <img
-                src="./assets/img/Header-9.png"
+                src="/img/Header-9.png"
                 width="612"
                 height="452"
                 className="img-fluid"
