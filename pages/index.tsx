@@ -1,10 +1,10 @@
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Image from "next/image";
+import { Img404 } from "@/utils/img";
 
 export default function Home() {
   return (
     <>
+      
       <section>
         <nav className="navbar navbar-expand-lg navbar-light bg-light bg-white pt-lg-40 pb-lg-40 pt-30 pb-50">
           <div className="container-fluid">
@@ -135,14 +135,14 @@ export default function Home() {
               <div className="d-flex justify-content-lg-end justify-content-center me-lg-5">
                 <div className="position-relative" data-aos="zoom-in">
                   <img
-                    src="./assets/img/Header-1.png"
+                    src="/public/img/Header-1.png"
                     className="img-fluid"
                     alt=""
                   />
                   <div className="card left-card position-absolute border-0">
                     <div className="d-flex align-items-center mb-16 gap-3">
                       <img
-                        src="./assets/img/Header-2.png"
+                        src="/img/Header-2.png"
                         width="40"
                         height="40"
                         className="rounded-pill"
@@ -514,7 +514,7 @@ export default function Home() {
               <a href="./src/detail.html">
                 <div className="blur-sharp">
                   <img
-                    src="./assets/img/Thumbnail-1.png"
+                    src="/img/Thumbnail-1.png"
                     width="205"
                     height="270"
                     alt=""
