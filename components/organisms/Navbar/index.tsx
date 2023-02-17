@@ -45,11 +45,11 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
-              <Menu title="Home" active />
-              <Menu title="Games" />
-              <Menu title="Reward" />
-              <Menu title="Discover" />
-              <Menu title="Global Ranks" />
+              <Menu title="Home" href="/" active />
+              <Menu title="Games" href="/games"/>
+              <Menu title="Reward" href="/reward"/>
+              <Menu title="Discover" href="discover"/>
+              <Menu title="Global Ranks" href="/global-ranks"/>
               <li className="nav-item my-auto">
                 <a
                   className="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
