@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonLogin = () => {
+const BtnLogin = () => {
   return (
     <li className="nav-item my-auto">
       <a
@@ -14,4 +14,4 @@ const ButtonLogin = () => {
   );
 };
 
-export default ButtonLogin;
+export default BtnLogin;
