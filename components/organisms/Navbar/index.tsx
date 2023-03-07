@@ -4,6 +4,7 @@ import Logo from "../../../public/icon/icon.svg";
 import Auth from "./Auth";
 
 import Menu from "./Menu";
+import TogleMenu from "./TogleMenu";
 
 const Navbar = () => {
   return (
@@ -13,17 +14,7 @@ const Navbar = () => {
           <a className="navbar-brand" href="#">
             <Image src={Logo} width={60} height={60} alt={""} />
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          <TogleMenu />
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
               <Menu title="Home" href="/" active />
