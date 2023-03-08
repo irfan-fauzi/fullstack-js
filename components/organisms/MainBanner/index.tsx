@@ -1,5 +1,6 @@
 import Image from "next/image";
 import StarIcon from "../../../public/icon/star.svg";
+import ImgHeader from "../../../public/img/Header-2.png";
 
 const MainBanner = () => {
   return (
@@ -44,14 +45,13 @@ const MainBanner = () => {
 
                 <div className="card left-card position-absolute border-0">
                   <div className="d-flex align-items-center mb-16 gap-3">
-                    <img
-                      src="/img/Header-2.png"
-                      width="40"
-                      height="40"
-                      className="rounded-pill"
-                      alt=""
+                    
+                    <Image
+                      src={ImgHeader}
+                      width={40}
+                      height={40}
+                      alt="header"
                     />
-
                     <div>
                       <p className="text-sm fw-medium color-palette-1 m-0">
                         Shayna Anne
