@@ -10,10 +10,24 @@ const TransectionStep = () => {
           <br /> Easy to Win the Game
         </h2>
         <div className="row gap-lg-0 gap-4" data-aos="fade-up">
-          <StepItem icon="step-icon-1" />
-          <StepItem icon="step-icon-2" />
-          <StepItem icon="step-icon-3" />
-          
+          <StepItem
+            icon="step-icon-1"
+            title="1. Start"
+            desc1="pilih salah satu game"
+            desc2="yang ingin kamu top up"
+          />
+          <StepItem
+            icon="step-icon-2"
+            title="2. Fill Up"
+            desc1="Top up sesuai dengan"
+            desc2="nominal yang sudah tersedia"
+          />
+          <StepItem
+            icon="step-icon-3"
+            title="3. Be a winner"
+            desc1="Siap digunakan untuk"
+            desc2="improve permainan kamu"
+          />
         </div>
       </div>
     </section>

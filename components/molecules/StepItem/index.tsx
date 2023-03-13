@@ -3,10 +3,13 @@ import React from "react";
 
 interface StepItemProps {
   icon: "step-icon-1" | "step-icon-2" | "step-icon-3";
+  title: string;
+  desc1: string;
+  desc2: string
 }
 
 const StepItem = (props: StepItemProps) => {
-  const { icon } = props;
+  const { icon, title ,desc1, desc2 } = props;
   return (
     <div className="col-lg-4">
       <div className="card feature-card border-0">
@@ -16,11 +19,11 @@ const StepItem = (props: StepItemProps) => {
           width={80}
           height={80}
         />
-        <p className="fw-semibold text-2xl mb-2 color-palette-1">1. Start</p>
+        <p className="fw-semibold text-2xl mb-2 color-palette-1">{title}</p>
         <p className="text-lg color-palette-1 mb-0">
-          Pilih salah satu game
+          {desc1}
           <br />
-          yang ingin kamu top up
+          {desc2}
         </p>
       </div>
     </div>
