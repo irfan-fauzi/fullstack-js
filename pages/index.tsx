@@ -1,10 +1,4 @@
-import FeaturedGames from "@/components/organisms/FeaturedGames";
-import Footer from "@/components/organisms/Footer";
-import MainBanner from "@/components/organisms/MainBanner";
-import Navbar from "@/components/organisms/Navbar";
-import Reached from "@/components/organisms/Reached";
-import Story from "@/components/organisms/Story";
-import TransectionStep from "@/components/organisms/TransactionStep";
+import HomePage from "@/components/templates/HomePage";
 
 import AOS from "aos";
 
@@ -15,24 +9,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Navbar />
-      {/* <!-- Header --> */}
-      <MainBanner />
-
-      {/* <!-- transactionStep --> */}
-      <TransectionStep />
-
-      {/* <!-- 5 Column - Featured-game --> */}
-      <FeaturedGames />
-
-      {/* <!-- Reached --> */}
-      <Reached />
-
-      {/* <!-- Story --> */}
-      <Story />
-
-      {/* <!-- Footer --> */}
-      <Footer />
+      <HomePage />
     </>
   );
 }
